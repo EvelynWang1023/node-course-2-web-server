@@ -53,6 +53,13 @@ app.get('/bad', (req, res) => {
 		errorMessage: 'Unable to handle request'
 	});
 });
+
+app.get('/project', (req, res) => {
+	res.render('project.hbs', {
+		pageTitle:'Home Page'
+	});
+});
+
 app.listen(port, () => {
 	console.log('Sever is up on port 3000.')
 });
